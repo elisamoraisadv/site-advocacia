@@ -1,0 +1,47 @@
+{
+  "nome": "Elisa Morais",
+  "nome_completo": "Elisa Alves Fontes Morais",
+  "marca": "Elisa Morais Advocacia",
+  "oab": "OAB/MT 34.518",
+  "cidade": "Cuiabá – MT",
+  "atendimento": "Atendimento online para todo o Brasil e presencial com agendamento",
+  "dominio": "https://elisamoraisadvocacia.com.br",
+  "email": "contato@elisamoraisadvocacia.com.br",
+  "whatsapp": "5565992323449",
+  "whatsapp_mensagem": "Olá! Vim pelo site e gostaria de agendar uma conversa.",
+  "instagram": "elisamoraisadv",
+  "linkedin": "https://www.linkedin.com/in/elisaafontes/",
+  "logo": "/img/logo.png",
+  "logo_claro": "/img/logo-claro.png",
+  "foto_principal": "/img/elisa-morais-advogada.jpg",
+  "foto_sobre": "/img/elisa-morais-sobre.jpg",
+  "foto_perfil": "/img/elisa-morais-perfil.jpg",
+  "foto_atendimento": "/img/elisa-morais-atendimento.jpg",
+  "hero_titulo": "Contratos claros para quem quer fazer negócio com segurança.",
+  "hero_texto": "Advocacia consultiva em contratos para empresas, pessoas e criadores de conteúdo. Eu leio, explico e escrevo os seus contratos para que você saiba exatamente o que está assinando.",
+  "sobre_resumo": "Advogada com experiência no jurídico interno de empresa e em escritório especializado. Trabalho de forma consultiva: o objetivo é prevenir o conflito antes que ele vire processo.",
+  "sobre_texto": "Sou Elisa Alves Fontes Morais, advogada inscrita na OAB de Mato Grosso sob o nº 34.518, e atuo na advocacia consultiva, com foco em contratos.\n\nAntes de abrir a minha advocacia, trabalhei no jurídico interno de uma empresa do setor de energia solar. Lá, cuidava de notificações, análises, revisão e redação de contratos, negociações e estratégia. Foi onde entendi o valor de ter uma advogada que conhece o negócio por dentro e resolve rápido o que chega à mesa.\n\nHoje levo esse modelo para empresas, profissionais e pessoas que precisam de contratos bem feitos e de alguém que explique cada cláusula em linguagem simples.\n\n## Como eu trabalho\n\n- Explico antes de redigir: você entende os riscos e decide com informação.\n- Atendo online, com reuniões por vídeo e assinatura digital.\n- Prazos combinados por escrito, sem surpresas.",
+  "seo_descricao": "Advocacia consultiva em contratos em Cuiabá – MT: contratos empresariais, assessoria jurídica mensal para empresas, contratos para pessoa física e para criadores de conteúdo.",
+  "links": [
+    {
+      "titulo": "Fale comigo no WhatsApp",
+      "url": "whatsapp"
+    },
+    {
+      "titulo": "Leia os artigos",
+      "url": "/artigos/"
+    },
+    {
+      "titulo": "Conheça as áreas de atuação",
+      "url": "/areas/"
+    },
+    {
+      "titulo": "LinkedIn",
+      "url": "https://www.linkedin.com/in/elisaafontes/"
+    },
+    {
+      "titulo": "Envie um e-mail",
+      "url": "email"
+    }
+  ]
+}

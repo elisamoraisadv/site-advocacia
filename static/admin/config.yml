@@ -1,0 +1,85 @@
+# Painel de conteúdo (Sveltia CMS).
+# Troque SEU-USUARIO/SEU-REPOSITORIO pelo seu repositório no GitHub.
+# Login: na tela do painel, use "Sign in with token" (token pessoal do GitHub).
+backend:
+  name: github
+  repo: SEU-USUARIO/SEU-REPOSITORIO
+  branch: main
+
+media_folder: static/uploads
+public_folder: /uploads
+
+collections:
+  - name: artigos
+    label: Artigos
+    label_singular: Artigo
+    folder: content/artigos
+    create: true
+    slug: "{{slug}}"
+    summary: "{{title}} ({{date | date('DD/MM/YYYY')}})"
+    sortable_fields: [date, title]
+    fields:
+      - { name: title, label: Título, widget: string, hint: "Use a pergunta ou o termo que a pessoa digitaria no Google." }
+      - { name: description, label: "Resumo para o Google", widget: text, hint: "Entre 120 e 160 caracteres. Aparece abaixo do título na busca." }
+      - { name: date, label: Data de publicação, widget: datetime }
+      - { name: image, label: Imagem de capa (opcional), widget: image, required: false }
+      - name: tags
+        label: Temas
+        widget: select
+        multiple: true
+        required: false
+        options: ["Contratos empresariais", "Prestação de serviços", "Pessoa física", "Criadores de conteúdo", "Noções de contrato", "Jurídico mensal"]
+      - { name: rascunho, label: "Rascunho (não publicar ainda)", widget: boolean, default: false }
+      - { name: body, label: Texto, widget: markdown }
+
+  - name: areas
+    label: Áreas de atuação
+    label_singular: Área
+    folder: content/areas
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: title, label: Nome da área, widget: string }
+      - { name: ordem, label: Ordem de exibição, widget: number, value_type: int }
+      - { name: resumo, label: Resumo curto, widget: text }
+      - { name: seo_descricao, label: "Descrição para o Google", widget: text }
+      - { name: tag_artigos, label: "Tema dos artigos relacionados", widget: string, required: false }
+      - { name: body, label: Texto da página, widget: markdown }
+
+  - name: configuracoes
+    label: Configurações do site
+    files:
+      - name: geral
+        label: Dados, contatos e textos
+        file: content/configuracoes.json
+        fields:
+          - { name: nome, label: Seu nome, widget: string }
+          - { name: nome_completo, label: Nome completo, widget: string }
+          - { name: marca, label: Nome da advocacia, widget: string }
+          - { name: oab, label: "Inscrição na OAB", widget: string }
+          - { name: cidade, label: Cidade, widget: string }
+          - { name: atendimento, label: Forma de atendimento, widget: string }
+          - { name: dominio, label: "Endereço do site (com https://)", widget: string }
+          - { name: email, label: E-mail, widget: string }
+          - { name: whatsapp, label: "WhatsApp (só números, com 55 e DDD)", widget: string }
+          - { name: whatsapp_mensagem, label: Mensagem inicial do WhatsApp, widget: string }
+          - { name: instagram, label: "Instagram (sem @)", widget: string }
+          - { name: linkedin, label: "LinkedIn (endereço completo)", widget: string, required: false }
+          - { name: logo, label: Logo (fundo claro), widget: image }
+          - { name: logo_claro, label: Logo (fundo escuro), widget: image }
+          - { name: foto_principal, label: Foto principal, widget: image }
+          - { name: foto_sobre, label: Foto da página Sobre, widget: image }
+          - { name: foto_perfil, label: Foto de perfil (artigos e links), widget: image }
+          - { name: foto_atendimento, label: Foto de atendimento (página inicial), widget: image }
+          - { name: hero_titulo, label: Título da página inicial, widget: string }
+          - { name: hero_texto, label: Texto de abertura, widget: text }
+          - { name: sobre_resumo, label: Resumo sobre você, widget: text }
+          - { name: sobre_texto, label: Texto da página Sobre, widget: markdown }
+          - { name: seo_descricao, label: "Descrição do site para o Google", widget: text }
+          - name: links
+            label: "Botões da página de links (bio do Instagram)"
+            widget: list
+            hint: "No campo endereço, use whatsapp, email ou instagram como atalhos, ou cole um link completo."
+            fields:
+              - { name: titulo, label: Texto do botão, widget: string }
+              - { name: url, label: Endereço, widget: string }
