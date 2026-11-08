@@ -1,5 +1,5 @@
 # Painel de conteúdo (Sveltia CMS).
-# Troque SEU-USUARIO/SEU-REPOSITORIO pelo seu repositório no GitHub.
+# Troque elisamoraisadv/site-advocacia pelo seu repositório no GitHub.
 # Login: na tela do painel, use "Sign in with token" (token pessoal do GitHub).
 backend:
   name: github
