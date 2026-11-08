@@ -3,7 +3,7 @@
 # Login: na tela do painel, use "Sign in with token" (token pessoal do GitHub).
 backend:
   name: github
-  repo: SEU-USUARIO/SEU-REPOSITORIO
+  repo: elisamoraisadv/site-advocacia
   branch: main
 
 media_folder: static/uploads
